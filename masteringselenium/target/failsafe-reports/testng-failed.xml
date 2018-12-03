@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="methods" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="10" parallel="methods" name="Surefire test(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="current"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.masteringselenium.clearcookies.BasicIT">
+        <methods>
+          <include name="instantiateDriverObject"/>
+          <include name="goCardinalExample"/>
+          <include name="goCrimsonExample"/>
+          <include name="clearCookies"/>
+          <include name="dolphinsExample"/>
+          <include name="closeDriverObjects"/>
+        </methods>
+      </class> <!-- com.masteringselenium.clearcookies.BasicIT -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
